@@ -1,0 +1,10 @@
+.section-layout {
+  display: flex;
+  align-items: flex-start;
+}
+
+@media (max-width: 900px) {
+  .section-layout {
+    flex-direction: column;
+  }
+}

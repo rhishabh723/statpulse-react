@@ -1,0 +1,112 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 0 28px;
+  background: var(--color-bg-translucent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.brand-name {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--color-text);
+}
+
+.brand-pulse {
+  color: var(--color-pulse);
+}
+
+.primary-nav {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+}
+
+.nav-pill {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-dim);
+  transition: border-color 0.18s ease, color 0.18s ease, background 0.18s ease;
+}
+
+.nav-pill--f1:hover,
+.nav-pill--f1.nav-pill--active {
+  color: var(--color-f1);
+  border-color: var(--color-f1);
+  background: rgba(225, 6, 0, 0.08);
+}
+
+.nav-pill--nba:hover,
+.nav-pill--nba.nav-pill--active {
+  color: var(--color-nba);
+  border-color: var(--color-nba);
+  background: rgba(53, 248, 255, 0.08);
+}
+
+.nav-pill--mlb:hover,
+.nav-pill--mlb.nav-pill--active {
+  color: var(--color-mlb);
+  border-color: var(--color-mlb);
+  background: rgba(46, 125, 50, 0.08);
+}
+
+.header-actions {
+  display: flex;
+  gap: 18px;
+  flex-shrink: 0;
+}
+
+.icon-link {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text-faint);
+  transition: color 0.18s ease;
+}
+
+.icon-link:hover,
+.icon-link.active {
+  color: var(--color-text);
+}
+
+@media (max-width: 720px) {
+  .site-header {
+    gap: 16px;
+    padding: 0 16px;
+  }
+  .brand-name {
+    font-size: 0.9rem;
+  }
+  .nav-pill {
+    padding: 6px 12px;
+    font-size: 0.72rem;
+  }
+  .header-actions {
+    gap: 10px;
+  }
+  .icon-link {
+    font-size: 0.7rem;
+  }
+}

@@ -1,0 +1,176 @@
+.home {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+.hero {
+  padding: 90px 0 70px;
+  max-width: 760px;
+}
+
+.hero-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  color: var(--color-accent);
+  margin: 0 0 18px;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  font-size: clamp(2.4rem, 5.5vw, 4rem);
+  line-height: 1.05;
+  margin-bottom: 24px;
+}
+
+.hero-sub {
+  font-size: 1.05rem;
+  max-width: 600px;
+  margin-bottom: 36px;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 14px;
+}
+
+.cta {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 13px 26px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.cta:hover {
+  transform: translateY(-1px);
+}
+
+.cta--f1 {
+  background: var(--color-f1);
+  color: #fff;
+}
+.cta--f1:hover {
+  box-shadow: 0 6px 20px rgba(225, 6, 0, 0.3);
+}
+
+.cta--nba {
+  background: transparent;
+  border-color: var(--color-nba);
+  color: var(--color-nba);
+}
+.cta--nba:hover {
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.2);
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  padding-bottom: 80px;
+}
+
+.featured-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-card-head {
+  margin-bottom: 16px;
+}
+
+.featured-card-head h2 {
+  font-family: var(--font-body);
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-top: 10px;
+}
+
+.featured-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  display: inline-block;
+}
+
+.featured-tag--f1 {
+  background: rgba(225, 6, 0, 0.12);
+  color: var(--color-f1);
+}
+.featured-tag--nba {
+  background: rgba(53, 211, 255, 0.12);
+  color: var(--color-nba);
+}
+
+.featured-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1200 / 850;
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--color-bg-raised);
+  margin-bottom: 16px;
+}
+
+.featured-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.featured-link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text);
+  align-self: flex-start;
+}
+.featured-link:hover {
+  color: var(--color-accent);
+}
+
+.about-teaser {
+  border-top: 1px solid var(--color-border);
+  padding: 56px 0 90px;
+  max-width: 640px;
+}
+
+.about-teaser h2 {
+  font-family: var(--font-body);
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 1.3rem;
+  color: var(--color-text);
+  margin-bottom: 14px;
+}
+
+.about-teaser-link {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+@media (max-width: 800px) {
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero {
+    padding: 56px 0 48px;
+  }
+}

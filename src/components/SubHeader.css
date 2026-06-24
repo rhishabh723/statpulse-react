@@ -1,0 +1,46 @@
+.sub-header {
+  height: 52px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-bg-raised);
+  position: sticky;
+  top: var(--header-height);
+  z-index: 90;
+}
+
+.sub-header-scroll {
+  display: flex;
+  gap: 6px;
+  padding: 0 24px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.sub-header-link {
+  flex-shrink: 0;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  padding: 8px 14px;
+  border-radius: var(--radius);
+  color: var(--color-text-faint);
+  white-space: nowrap;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.sub-header-link:hover {
+  color: var(--color-text);
+}
+
+.sub-header--f1 .sub-header-link--active {
+  color: var(--color-f1);
+  background: rgba(225, 6, 0, 0.08);
+  font-weight: 600;
+}
+
+.sub-header--nba .sub-header-link--active {
+  color: var(--color-nba);
+  background: rgba(255, 107, 53, 0.08);
+  font-weight: 600;
+}

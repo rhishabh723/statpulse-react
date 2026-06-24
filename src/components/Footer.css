@@ -1,0 +1,18 @@
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  padding: 28px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--color-text-faint);
+}
+
+.site-footer-dot {
+  margin: 0 8px;
+}
+
+.site-footer a {
+  color: var(--color-text-faint);
+}
+.site-footer a:hover {
+  color: var(--color-accent);
+}
