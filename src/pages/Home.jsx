@@ -1,13 +1,19 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import './Home.css';
+const CASE_STUDIES = [
+  { slug: 'kj-case-study', title: 'Case Study 1: Keyont George 2026 Offseason Analytics Guide' },
+  { slug: 'jj-case-study', title: 'Case Study 2: Jalen Johnson 2024 Offseason Analytics Guide' },
+  { slug: 'ks-case-study', title: 'Case Study 3: Jalen Suggs 2024 Offseason Analytics Guide' },
+  { slug: 'vj-case-study', title: 'Case Study 4: VJ Edgecombe College Stats' },
+];
 
 // Hardcoded rather than imported from statpulseData so the Home page
 // (eagerly loaded) doesn't pull the full ~1MB data module into the main bundle.
-const FEATURED_F1_URL =
-  'https://rhishabh723.github.io/statpulse-html/plots/Points/2025/Trended%20Team%20Points%20for%20the%202025%20F1%20Season.html';
-const FEATURED_NBA_URL =
-  'https://rhishabh723.github.io/statpulse-html/plots/Player%20Box%20Scores/2024/Leaders%20In%20Total%20PTS%20For%20The%202023-24%20Season.html';
+// const FEATURED_F1_URL =
+//   'https://rhishabh723.github.io/statpulse-html/plots/Points/2025/Trended%20Team%20Points%20for%20the%202025%20F1%20Season.html';
+// const FEATURED_NBA_URL =
+//   'https://rhishabh723.github.io/statpulse-html/plots/Player%20Box%20Scores/2024/Leaders%20In%20Total%20PTS%20For%20The%202023-24%20Season.html';
 
 export default function Home() {
   return (
@@ -38,9 +44,21 @@ export default function Home() {
             </Link>
           </div>
         </motion.div>
+
+      </section>
+      <section className="case-studies">
+        <h2 className="case-studies-title">NBA Case Studies</h2>
+        <div className="case-studies-list">
+          {CASE_STUDIES.map((study) => (
+            <Link key={study.slug} to={`/nba/case-studies/${study.slug}`} className="case-study-link">
+              {study.title}
+            </Link>
+          ))}
+        </div>
       </section>
 
-      <section className="featured-grid">
+{/* Commenting the featured links from before */}
+      {/* <section className="featured-grid">
         <motion.div
           className="featured-card featured-card--f1"
           initial={{ opacity: 0, y: 24 }}
@@ -88,7 +106,7 @@ export default function Home() {
             See full player box scores →
           </Link>
         </motion.div>
-      </section>
+      </section> */}
 
       <section className="about-teaser">
         <div>

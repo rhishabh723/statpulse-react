@@ -174,3 +174,37 @@
     padding: 56px 0 48px;
   }
 }
+
+.case-studies {
+  padding: 0 0 60px;
+}
+
+.case-studies-title {
+  font-family: var(--font-body);
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 1.3rem;
+  color: var(--color-text);
+  margin-bottom: 20px;
+}
+
+.case-studies-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.case-study-link {
+  padding: 14px 18px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-bg-card);
+  color: var(--color-text);
+  font-weight: 600;
+  transition: border-color 0.18s ease, transform 0.18s ease;
+}
+
+.case-study-link:hover {
+  border-color: var(--color-nba);
+  transform: translateX(4px);
+}

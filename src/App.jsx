@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 
 const NbaPage = lazy(() => import('./pages/NbaPage'));
 const F1Page = lazy(() => import('./pages/F1Page'));
+const CaseStudyPage = lazy(() => import('./pages/CaseStudyPage'));
 
 function PageFallback() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/nba" element={<NbaPage />} />
             <Route path="/nba/:category" element={<NbaPage />} />
+            <Route path="/nba/case-studies/:slug" element={<CaseStudyPage />} />
             <Route path="/f1" element={<F1Page />} />
             <Route path="/f1/:season" element={<F1Page />} />
             <Route path="/f1/:season/:race" element={<F1Page />} />
