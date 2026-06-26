@@ -1,7 +1,11 @@
 // Auto-generated from the original statpulse-html repo.
 // Chart sources point to the existing GitHub Pages deployment.
 export const statpulseData = {
-  "nba": {
+
+"nbaGroups": {
+
+  "2023-24": {
+    "label": "2023-24",
     "nav": [
       {
         "slug": "nba_2024_salaries",
@@ -1158,23 +1162,6 @@ export const statpulseData = {
     }
   },
 
-  "nbaCaseStudies": {
-  "kj-case-study": {
-    "title": "Case Study 1: Keyont George 2026 Offseason Analytics Guide",
-    "pdfUrl": "https://rhishabh723.github.io/statpulse-html/case-studies/case-study-1.pdf"
-  },
-  "jj-case-study": {
-    "title": "Case Study 2: Jalen Johnson 2024 Offseason Analytics Guide",
-    "pdfUrl": "https://rhishabh723.github.io/statpulse-html/case-studies/case-study-2.pdf"
-  },
-  "js-case-study": {
-    "title": "Case Study 3: Jalen Suggs 2024 Offseason Analytics Guide",
-    "pdfUrl": "https://rhishabh723.github.io/statpulse-html/case-studies/case-study-3.pdf"
-  },
-  "vj-case-study": {
-    "title": "Case Study 4: VJ Edgecombe College Stats",
-    "pdfUrl": "https://rhishabh723.github.io/statpulse-html/case-studies/case-study-4.pdf"
-  },
   },
 
   "f1Seasons": {
